@@ -7,8 +7,11 @@ The purpose of this analysis is to leverage historical lending data from a peer-
 To achieve my goal, I followed several important stages in the machine learning process:
 
 **Data Preparation**: I loaded the data, separated the features (X) from the target (y), and examined the imbalance in the loan_status variable.
-Data Splitting**: The dataset was divided into training and testing sets using train_test_split to ensure consistency across multiple runs.
+
+**Data Splitting**: The dataset was divided into training and testing sets using train_test_split to ensure consistency across multiple runs.
+
 **Model Training**: I built an initial logistic regression model using the original imbalanced data. Recognizing the imbalance (with many more healthy loans than high-risk ones), I then applied RandomOverSampler to create a balanced training set and trained a second logistic regression model.
+
 **Model Evaluation**: Both models were evaluated using accuracy, precision, recall, and F1-score, with particular emphasis on the model’s ability to correctly identify both healthy and high-risk loans.
 
 # Results
